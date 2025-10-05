@@ -1,29 +1,34 @@
-package main
+// Package: app/cmd
+// File: main.go
+// Author: Daniel J. Manning
+//
+//
+// MIT License
+// Copyright (c) 2025 Daniel J. Manning
+// Created: Sun, 05 Oct 2025
+//
+//
+// License: MIT (See LICENSE file in repository)
+// GitHub: https://github.com/djmcodechain
 
-/*
-Path: app/cmd
-File: main.go
-Developer(s): Daniel J. Manning
-Created: Sun, 05 Oct 2025
-*/
+package main
 
 import (
 	// import packages
-	"crypto/rand"
-	"encoding/base64"
+	"bytegen/bytegen"
 	"fmt"
 )
 
-// Generate Bytes of a length given by the developer
-func GenerateBytes(length int) ([]byte, error) {
-	// Make a variable of b & store the amount length
-	b := make([]byte, length)
-	// If there's an error
-	if _, err := rand.Read(b); err != nil {
-		// Print the error
-		return []byte(""), fmt.Errorf("random generation failed: %w", err)
+func main() {
+	// Create token and error variables for generating 32 random bytes
+	token, err := bytegen.GenerateRandomBytes(32)
+
+	// If there's an error, print it
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
 	}
 
-	// Ensure it's a []byte and encode it in a base64 string ("")
-	return []byte(base64.StdEncoding.EncodeToString(b)), nil
+	// Print the token of 32 random bytes
+	fmt.Println("Generated token:", token)
 }
