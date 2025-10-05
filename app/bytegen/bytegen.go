@@ -1,17 +1,8 @@
-// Package: app/bytegen
+package bytegen
+
 // File: bytegen.go
 // Author: Daniel J. Manning
-//
-//
-// MIT License
-// Copyright (c) 2025 Daniel J. Manning
-// Created: Sun, 05 Oct 2025
-//
-//
-// License: MIT (See LICENSE file in repository)
 // GitHub: https://github.com/djmcodechain
-
-package bytegen
 
 import (
 	// import packages
@@ -29,3 +20,9 @@ func GenerateRandomBytes(length int) (string, error) {
 	}
 	return base64.StdEncoding.EncodeToString(b), nil
 }
+
+// MIT License
+// Copyright (c) 2025 Daniel J. Manning
+// Created: Sun, 05 Oct 2025
+//
+// License: MIT (See LICENSE file in repository)
