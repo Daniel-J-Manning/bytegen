@@ -1,14 +1,5 @@
-// Package: app/cmd
-// File: main.go
+// File: bytegen.go
 // Author: Daniel J. Manning
-//
-//
-// MIT License
-// Copyright (c) 2025 Daniel J. Manning
-// Created: Sun, 05 Oct 2025
-//
-//
-// License: MIT (See LICENSE file in repository)
 // GitHub: https://github.com/djmcodechain
 
 package main
@@ -32,3 +23,9 @@ func main() {
 	// Print the token of 32 random bytes
 	fmt.Println("Generated token:", token)
 }
+
+// MIT License
+// Copyright (c) 2025 Daniel J. Manning
+// Created: Sun, 05 Oct 2025
+//
+// License: MIT (See LICENSE file in repository)
