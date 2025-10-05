@@ -1,8 +1,8 @@
+package main
+
 // File: bytegen.go
 // Author: Daniel J. Manning
 // GitHub: https://github.com/djmcodechain
-
-package main
 
 import (
 	// import packages
