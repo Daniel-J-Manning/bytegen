@@ -4,6 +4,6 @@
 // Author: Daniel J. Manning
 // Created: 05 Oct, 2025
 
-module bytegen
+module github.com/djmcodechain/bytegen
 
 go 1.24.6
